@@ -1,50 +1,117 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>康康的个人博客</title>
-  </head>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于我 · 仁稔</title>
+  <meta name="description" content="我是 仁稔，本科在读，写作·AI·个人成长·独立写作。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-  <body>
-    <header>
-      <h1>康康的个人博客</h1>
-      <p>写作、编程、英语与个人成长记录。</p>
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">仁稔</a>
+      <button class="nav__toggle" aria-label="菜单" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="articles.html">文章</a></li>
+        <li><a href="projects.html">项目</a></li>
+        <li><a href="about.html" class="active">关于</a></li>
+        <li><a href="contact.html">联系</a></li>
+      </ul>
+    </div>
+  </nav>
 
-      <nav>
-        <a href="index.html">首页</a>
-        <a href="#">文章</a>
-        <a href="#">关于我</a>
-      </nav>
-    </header>
+  <main>
+    <div class="container">
 
-    <main>
-      <section>
-        <h2>欢迎来到我的博客</h2>
-        <p>
-          这里是我长期记录思考、学习和成长的地方。
-          我会慢慢把它从一个简单网页，变成一个真正属于自己的数字花园。
+      <div class="about-hero">
+        <h1 class="about-hero__title">你好，我是 仁稔</h1>
+        <p class="about-hero__lead">
+          一个正在认真思考、持续输出的内容创作者。我相信写作是最好的思考工具，也相信一个人可以做很多事。
         </p>
-      </section>
+      </div>
 
-      <section>
-        <h2>最新文章</h2>
+      <hr class="about-divider" />
 
-        <article>
-          <h3>我的第一篇博客</h3>
-          <p>这是我的第一篇文章，用来记录我开始搭建个人网站的第一天。</p>
-          <a href="#">阅读全文</a>
-        </article>
+      <div class="about-content">
 
-        <article>
-          <h3>为什么我要学编程</h3>
-          <p>编程不是为了成为机器，而是为了拥有创造工具的能力。</p>
-          <a href="#">阅读全文</a>
-        </article>
-      </section>
-    </main>
+        <p>
+          我在大学时开始认真写作。不是为了流量，最初只是因为发现：不写出来，你永远不知道自己到底有没有想清楚一件事。
+        </p>
 
-    <footer>
-      <p>© 2026 康康的个人博客</p>
-    </footer>
-  </body>
+        <p>
+          后来我慢慢意识到，写作对我来说不只是记录，更是一种认知升级的方式。每一篇认真的文章，都在逼迫我把模糊的感受变成清晰的判断。
+        </p>
+
+        <h3>我关注什么</h3>
+
+        <div class="about-tags">
+          <span class="tag">写作方法论</span>
+          <span class="tag">AI 工具应用</span>
+          <span class="tag">认知升级</span>
+          <span class="tag">个人品牌</span>
+          <span class="tag">大学生成长</span>
+          <span class="tag">一人公司</span>
+          <span class="tag">内容系统</span>
+          <span class="tag">自我管理</span>
+        </div>
+
+        <p>
+          这些方向看起来分散，但在我这里有一条主线：<strong>如何成为一个有独立判断力、能持续输出的人</strong>。无论是写作、AI 工具还是一人公司，本质上都在服务这个目标。
+        </p>
+
+        <h3>现在在做什么</h3>
+
+        <p>
+          我在运营个人公众号，每周输出一篇思考型文章。内容偏长，不追热点，只写自己真正想清楚的东西。我也在研究 AI 辅助内容创作的工作流，探索如何让输出更高效、更有质量。
+        </p>
+
+        <p>
+          同时，我对"一人公司"这个模式非常感兴趣——一个人、少量工具、聚焦价值，这或许是未来很多有能力的个体的最优解。
+        </p>
+
+        <h3>这个网站是什么</h3>
+
+        <p>
+          这里是我的思考记录，也是我的个人 IP 主页。你可以在文章页找到我写过的东西，在项目页了解我正在做的事。如果你有共鸣，欢迎联系我。
+        </p>
+
+        <p>
+          我不是什么大 V，只是一个认真在想事情的普通人。但我相信，持续输出、不断迭代，是建立个人影响力最笨也最可靠的方式。
+        </p>
+
+        <hr class="about-divider" />
+
+        <div style="display:flex; gap:16px; flex-wrap:wrap;">
+          <a href="articles.html" class="btn btn--primary">读我的文章</a>
+          <a href="contact.html" class="btn btn--outline">和我联系</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__copy">© 2026 仁稔 · 认真写东西的人</span>
+      <nav class="footer__links">
+        <a href="articles.html">文章</a>
+        <a href="projects.html">项目</a>
+        <a href="contact.html">联系</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
+</body>
 </html>
